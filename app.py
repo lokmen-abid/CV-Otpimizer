@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
 
 import os
@@ -209,15 +209,7 @@ def improve():
                            jd_lang=None)
 
 
-@app.route('/upload', methods=['POST'])
-def upload_file():
-    if 'cv' not in request.files or 'job_description' not in request.files:
-        return redirect(request.url)
-    cv = request.files['cv']
-    job_description = request.files['job_description']
-    # Process the files here
-    return 'Files uploaded successfully'
-
+# route /upload supprimée (non utilisée) - code nettoyé
 
 if __name__ == '__main__':
     # démarrer en mode debug pour voir les logs

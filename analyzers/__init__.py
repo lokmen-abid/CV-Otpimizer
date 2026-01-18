@@ -1,6 +1,7 @@
 """Package analyzers pour ATS-CV-Optimizer.
 
-Contient des stubs pour les modules d'analyse qui ont été désactivés.
+Contient les modules d'analyse actifs exportés explicitement pour réduire les
+warnings liés aux imports manquants.
 """
 
-__all__ = []
+__all__ = ["ats", "similarity_scorer"]
