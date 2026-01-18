@@ -1,6 +1,6 @@
 """Package analyzers pour ATS-CV-Optimizer.
 
-Fichier minimal pour rendre `analyzers` explicite en tant que package Python.
+Contient des stubs pour les modules d'analyse qui ont été désactivés.
 """
 
-__all__ = ["keywords_extractor", "similarity_scorer"]
+__all__ = []

@@ -21,55 +21,34 @@
       <pre class="p-3 border bg-light" style="white-space:pre-wrap;">{{ job_description or 'Aucune description fournie' }}</pre>
     </div>
 
+    {% if ats_score is defined %}
     <div class="mb-4">
-      <h5>Scores de similarité</h5>
+      <h5>Score ATS</h5>
+      <p><strong>{{ ats_score }} / 100</strong></p>
+    </div>
+    {% endif %}
+
+    {% if match_results %}
+    <div class="mb-4">
+      <h5>Match CV ↔ JD</h5>
+      <p>Similarity (TF-IDF): <strong>{{ match_results.similarity_score }}%</strong> <small class="text-muted">({{ match_results.tfidf_method }})</small></p>
+      <p>Keyword overlap: <strong>{{ match_results.keyword_match }}%</strong></p>
+      {% if match_results.embed_score is defined %}
+      <p>Embedding similarity: <strong>{{ match_results.embed_score }}%</strong> <small class="text-muted">({{ match_results.embed_method }})</small></p>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if recommendations %}
+    <div class="mb-4">
+      <h5>Recommandations</h5>
       <ul>
-        <li>Score TF-IDF: <strong>{% if tfidf_method and tfidf_method != 'unavailable' %}{{ '%.3f'|format(tfidf_score or 0.0) }}{% else %}Non calculé (dépendances manquantes){% endif %}</strong> {% if tfidf_method %} <small class="text-muted">(méthode: {{ tfidf_method }})</small> {% endif %}</li>
-        <li>Score Embeddings: <strong>{% if embed_method and embed_method != 'unavailable' %}{{ '%.3f'|format(embed_score or 0.0) }}{% else %}Non calculé (dépendances manquantes){% endif %}</strong> {% if embed_method %} <small class="text-muted">(méthode: {{ embed_method }})</small> {% endif %}</li>
+        {% for r in recommendations %}
+          <li>{{ r }}</li>
+        {% endfor %}
       </ul>
     </div>
-
-    <div class="mb-4">
-      <h5>Mots-clés extraits du CV</h5>
-      {% if cv_keywords %}
-        <div class="row">
-          {% for method, items in cv_keywords.items() %}
-            <div class="col-12 col-md-4 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h6 class="card-title text-capitalize">{{ method }}</h6>
-                  {% if items %}
-                    <ul class="mb-0">
-                      {% for k, score in items %}
-                        <li>{{ k }} <small class="text-muted">({{ '%.3f'|format(score) }})</small></li>
-                      {% endfor %}
-                    </ul>
-                  {% else %}
-                    <p class="text-muted">Aucun mot-clé (dépendances manquantes)</p>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      {% else %}
-        <p class="text-muted">Aucun mot-clé extrait.</p>
-      {% endif %}
-    </div>
-
-    <div class="mb-4">
-      <h5>Comparaison des mots-clés (JD vs CV)</h5>
-      {% set jd_top = compare_res.get('jd_top_terms') if compare_res else [] %}
-      {% set present = compare_res.get('present_terms') if compare_res else [] %}
-      {% set missing = compare_res.get('missing_terms') if compare_res else [] %}
-      {% if jd_top %}
-        <p>Top mots-clés JD: <strong>{{ jd_top | join(', ') }}</strong></p>
-        <p>Présents dans CV: <strong>{{ present | join(', ') }}</strong></p>
-        <p>Manquants dans CV: <strong class="text-danger">{{ missing | join(', ') }}</strong></p>
-      {% else %}
-        <p class="text-muted">Aucun résultat de comparaison (dépendances manquantes ou pas de texte fourni).</p>
-      {% endif %}
-    </div>
+    {% endif %}
 
     <div class="mb-4">
       <h5>Sections extraites du CV</h5>
@@ -91,10 +70,12 @@
       {% endif %}
     </div>
 
+    {% if keywords_table %}
     <div class="mb-4">
-      <h5>Texte brut extrait (aperçu)</h5>
-      <pre class="p-3 border bg-light" style="max-height:360px; overflow:auto; white-space:pre-wrap;">{{ cv_text or 'Aucun texte extrait' }}</pre>
+      <h5>Mots-clés qui correspondent</h5>
+      <p>{{ keywords_table | join(', ') }}</p>
     </div>
+    {% endif %}
 
     <a href="/" class="btn btn-secondary">Retour</a>
   </div>
