@@ -112,8 +112,7 @@ Prochaines étapes (roadmap courte)
 ----------------------------------
 1. Itération 1 : intégrer `sentence-transformers` pour embeddings et améliorer la page de résultats (ajouter heatmap / mise en évidence des mots manquants).
 2. Intégration IA (OpenAI/LiteLLM) pour générer suggestions de réécriture et phrases d'accroche adaptées à la JD.
-3. Ajouter des tests unitaires pour `parsers` et `analyzers` et un petit jeu d'exemples JD/CV pour CI.
-4. Améliorer l'UX : télécharger un CV modifié (suggestions appliquées) et historique des analyses.
+
 
 
 Ressources et références
@@ -130,8 +129,7 @@ Voici quelques articles et notebooks utiles qui ont inspiré ou peuvent aider po
 Contact / notes
 ----------------
 - Fichiers principaux à consulter : `app.py`, `parsers/cv_parser.py`, `parsers/jd_parser.py`, `analyzers/ats.py`, `analyzers/similarity_scorer.py`.
-- Le code est volontairement défensif : il essaie d'importer des composants optionnels et utilise des fallback si nécessaire. Le but actuel est de minimiser les erreurs/warnings en évitant d'importer des modules non utilisés et en gardant des stubs clairs.
-- Si vous souhaitez que j'implémente l'itération 1 (embeddings) ou la génération IA, indiquez-le et je préparerai les fichiers et tests associés.
+
 
 Licence
 -------
