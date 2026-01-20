@@ -73,8 +73,6 @@ Rôle de chaque composant
   - compute_embedding_similarity(cv_text, jd_text, model_name='all-MiniLM-L6-v2') -> dict | None
     - tente `sentence-transformers`, ensuite vecteurs spaCy, puis fallback Jaccard.
 
-- `analyzers/keywords_extractor.py` : (désactivé)
-  - actuellement remplacé par un stub vide pour garder les imports existants. Si vous souhaitez réactiver l'extraction de mots-clés (KeyBERT / YAKE / spaCy), remplacer ce fichier par les fonctions désirées.
 
 - `templates/index.html` et `templates/improve.html` : interface utilisateur minimale (Bootstrap) pour l'upload et l'affichage des résultats.
 
@@ -90,7 +88,7 @@ Structure globale / architecture
 Installation & dépendances
 ---------------------------
 Le fichier `requirements.txt` liste les dépendances recommandées. Points importants :
-- Pour une installation minimale (itération 0) : `Flask`, `python-docx`, `PyMuPDF`, `numpy`, `scikit-learn` (si vous voulez TF‑IDF avancé), `spaCy` (optionnel).
+- Pour une installation minimale (itération 0) : `Flask`, `python-docx`, `PyMuPDF`, `numpy`, `scikit-learn`, `spaCy` .
 - Pour l'itération 1 (embeddings) : `sentence-transformers` et ses dépendances (PyTorch). Le téléchargement de modèles peut se faire au runtime et nécessite accès réseau.
 - KeyBERT / YAKE / transformers sont listés comme optionnels pour extraction de mots-clés.
 
