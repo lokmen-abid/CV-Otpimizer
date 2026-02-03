@@ -1,27 +1,27 @@
+# Core dependencies (itération 0)
 Flask>=2.2
+gunicorn
 python-docx>=0.8.11
-PyMuPDF>=1.22.0
+PyMuPDF>=1.22.0  # fitz pour extraction PDF
 spacy>=3.5
-sentence-transformers>=2.2.2
 scikit-learn>=1.2
 numpy>=1.24
+
+# Notes: Werkzeug and Jinja2 are pulled in by Flask; listed here only if you want explicit control
 werkzeug>=2.2
-
-# Keyword extraction libraries (optionnel mais recommandés)
-keybert>=0.7.0
-yake>=0.4.8
-
-# Templating for recommendations
 jinja2>=3.1
 
-# Caching / joblib for embeddings cache
+# Optional / itération 1 (avancées)
+# Embeddings (lourds, nécessite PyTorch ou une runtime adaptée)
+sentence-transformers>=2.2.2
+# Cache pour embeddings (optionnel)
 joblib>=1.2
-# diskcache optional alternative: pip install diskcache
-# diskcache>=5.4.0
+diskcache>=5.4.0  # alternative à joblib
 
-# Optional extras for NLP/IA
-# keybert needs sentence-transformers (already listed); transformers may be required depending on model
-transformers
+# Keyword extraction (optionnel)
+keybert>=0.7.0
+yake>=0.4.8
+transformers  # pour certains modèles KeyBERT/transformers
 
-# Tests
-pytest>=7.2
+# Testing (optionnel)
+# pytest>=7.2

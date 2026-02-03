@@ -241,4 +241,5 @@ def improve():
 
 if __name__ == '__main__':
     # démarrer en mode debug pour voir les logs
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Render fournit PORT
+    app.run(host='0.0.0.0', port=port, debug=False)
