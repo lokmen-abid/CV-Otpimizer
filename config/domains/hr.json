@@ -1,0 +1,53 @@
+{
+  "name": "Human Resources",
+  "verbs": {
+    "en": [
+      "recruited", "onboarded", "coached", "mentored", "managed", "developed", "implemented", "facilitated", "streamlined", "trained",
+      "hired", "sourced", "screened", "interviewed", "assessed", "selected", "negotiated", "offered", "retained", "engaged",
+      "designed", "delivered", "evaluated", "analyzed", "improved", "reduced", "increased", "led", "coordinated", "organized",
+      "administered", "advised", "supported", "resolved", "mediated", "investigated", "conducted", "performed", "monitored",
+      "optimized", "automated", "aligned", "partnered", "collaborated", "promoted", "successioned", "planned", "executed", "measured",
+      "reported", "complied", "ensured", "fostered", "cultivated"
+    ],
+    "fr": [
+      "recruté", "intégré", "coaché", "mentoré", "géré", "développé", "implémenté", "facilité", "rationalisé", "formé",
+      "embauché", "sourcé", "sélectionné", "interviewé", "évalué", "choisi", "négocié", "offert", "retenu", "engagé",
+      "conçu", "délivré", "évalué", "analysé", "amélioré", "réduit", "augmenté", "dirigé", "coordonné", "organisé",
+      "administré", "conseillé", "supporté", "résolu", "médié", "enquêté", "conduit", "effectué", "surveillé",
+      "optimisé", "automatisé", "aligné", "partenarié", "collaboré", "promu", "planifié la succession", "planifié", "exécuté", "mesuré",
+      "rapporté", "assuré la conformité", "garanti", "favorisé", "cultivé"
+    ]
+  },
+  "recommendations": {
+    "en": [
+      "Highlight recruitment volumes and time-to-hire improvements (e.g., recruited 150+ positions annually, reduced time-to-hire from 60 to 28 days).",
+      "Show measurable improvements in retention or engagement (e.g., increased employee retention by 15%, improved engagement scores from 72% to 88%).",
+      "Include implementation of HRIS or process automation (e.g., rolled out Workday/SuccessFactors, automated onboarding reducing paperwork by 70%).",
+      "Quantify diversity, equity, and inclusion initiatives (e.g., increased underrepresented hires by 25%, led DEI training programs for 500+ employees).",
+      "Mention talent acquisition strategies (e.g., employer branding, LinkedIn sourcing, campus recruitment, referral programs with conversion rates).",
+      "Emphasize performance management (e.g., designed appraisal systems, conducted 360° feedback, reduced turnover in high-performers).",
+      "Detail learning and development programs (e.g., created leadership academy, delivered 10,000+ training hours, improved skill gap closure by 40%).",
+      "Highlight employee relations and conflict resolution (e.g., managed investigations, reduced grievances by 30%, improved exit interview insights).",
+      "Include compensation and benefits expertise (e.g., conducted market analyses, implemented pay equity reviews, designed incentive plans).",
+      "Showcase HR compliance and risk management (e.g., ensured GDPR/CCPA/EEO compliance, reduced audit findings to zero).",
+      "List key HR tools and systems (e.g., ATS like Lever/Taleo, HRIS like BambooHR/Paylocity, analytics tools like Visier/People Analytics).",
+      "Demonstrate leadership and change management (e.g., led HR transformation projects, supported mergers/acquisitions, managed organizational restructuring).",
+      "Focus on business impact (e.g., reduced hiring costs by 20%, contributed to talent pipeline supporting 15% revenue growth)."
+    ],
+    "fr": [
+      "Mettez en avant les volumes de recrutement et l'amélioration du délai d'embauche (ex. recruté plus de 150 postes par an, réduit le time-to-hire de 60 à 28 jours).",
+      "Indiquez des améliorations mesurables en rétention ou engagement (ex. augmentation de la rétention de 15 %, amélioration des scores d'engagement de 72 % à 88 %).",
+      "Incluez la mise en place d'un SIRH ou l'automatisation des processus (ex. déploiement de Workday/SuccessFactors, automatisation de l'onboarding réduisant la paperasse de 70 %).",
+      "Quantifiez les initiatives diversité, équité et inclusion (ex. augmentation des embauches sous-représentées de 25 %, animation de formations DEI pour plus de 500 employés).",
+      "Mentionnez les stratégies de talent acquisition (ex. employer branding, sourcing LinkedIn, recrutement campus, programmes de cooptation avec taux de conversion).",
+      "Soulignez la gestion de la performance (ex. conception de systèmes d'évaluation, feedback 360°, réduction du turnover des hauts potentiels).",
+      "Détaillez les programmes de formation et développement (ex. création d'une académie leadership, délivrance de plus de 10 000 heures de formation, réduction des écarts de compétences de 40 %).",
+      "Mettez en valeur les relations employés et la résolution de conflits (ex. gestion d'enquêtes, réduction des griefs de 30 %, amélioration des insights des entretiens de départ).",
+      "Incluez l'expertise en rémunération et avantages (ex. analyses de marché, revues d'équité salariale, conception de plans d'incitation).",
+      "Valorisez la conformité RH et la gestion des risques (ex. respect GDPR/CCPA/EEO, réduction des écarts d'audit à zéro).",
+      "Listez les outils et systèmes RH clés (ex. ATS comme Lever/Taleo, SIRH comme BambooHR/Paylocity, outils d'analytique comme Visier/People Analytics).",
+      "Démontrez le leadership et la gestion du changement (ex. pilotage de projets de transformation RH, accompagnement fusions/acquisitions, restructurations organisationnelles).",
+      "Insistez sur l'impact business (ex. réduction des coûts de recrutement de 20 %, contribution au pipeline talents soutenant une croissance de revenus de 15 %)."
+    ]
+  }
+}

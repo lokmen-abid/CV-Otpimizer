@@ -1,0 +1,47 @@
+{
+  "name": "Accounting",
+  "verbs": {
+    "en": [
+      "reconciled", "audited", "reported", "adjusted", "forecasted", "booked", "closed", "streamlined", "improved", "automated",
+      "prepared", "compiled", "analyzed", "reviewed", "processed", "managed", "tracked", "budgeted", "costed", "allocated",
+      "filed", "ensured", "complied", "investigated", "resolved", "monitored", "optimized", "reduced", "increased", "documented",
+      "presented", "advised", "controlled", "maintained", "generated", "validated", "posted", "accrued", "depreciated", "amortized",
+      "assessed", "corrected", "eliminated", "integrated", "trained", "collaborated"
+    ],
+    "fr": [
+      "rapproché", "audité", "reporté", "ajusté", "prévu", "comptabilisé", "clôturé", "rationalisé", "amélioré", "automatisé",
+      "préparé", "compilé", "analysé", "revu", "traité", "géré", "suivi", "budgété", "coûté", "alloué",
+      "déposé", "assuré", "conforme", "enquêté", "résolu", "surveillé", "optimisé", "réduit", "augmenté", "documenté",
+      "présenté", "conseillé", "contrôlé", "maintenu", "généré", "validé", "enregistré", "constitué", "amorti", "amorti",
+      "évalué", "corrigé", "éliminé", "intégré", "formé", "collaboré"
+    ]
+  },
+  "recommendations": {
+    "en": [
+      "Quantify financial improvements (e.g., reduced reconciliation errors by 95%, saved $120K in annual costs through process automation, improved cash flow by 25% via better AR management).",
+      "Include audit scope and results (e.g., led internal audits covering $10M in assets, identified and resolved discrepancies totaling $50K, achieved clean audit opinions).",
+      "Mention systems used (ERP like SAP, Oracle, NetSuite; accounting software like QuickBooks, Xero, Sage; Excel advanced, Power BI/Tableau for reporting) and automation achieved (e.g., automated monthly close reducing time from 10 to 3 days).",
+      "Highlight financial statement preparation and analysis (e.g., prepared monthly/quarterly financial statements under GAAP/IFRS, conducted variance analysis with 98% accuracy).",
+      "Detail compliance and regulatory expertise (e.g., ensured SOX/GAAP/IFRS compliance, managed tax filings reducing penalties to zero, handled multi-jurisdiction reporting).",
+      "Show cost control and budgeting (e.g., managed $5M+ budgets, achieved 15% under-budget performance, implemented zero-based budgeting saving 12%).",
+      "Emphasize accounts payable/receivable and payroll (e.g., processed 500+ invoices monthly with 99% on-time payment, reduced DSO from 45 to 28 days).",
+      "Include certifications and professional development (e.g., CPA, CMA, CPA Canada, ACCA, or equivalent; knowledge of ASC 606, lease accounting standards).",
+      "Focus on leadership and process improvement (e.g., led finance team of 8, implemented ERP migration, trained staff on new systems reducing errors).",
+      "Showcase business partnering (e.g., provided financial insights to management leading to strategic decisions, supported M&A due diligence).",
+      "Mention risk management and fraud detection (e.g., implemented internal controls reducing fraud risk, conducted forensic reviews)."
+    ],
+    "fr": [
+      "Quantifiez les améliorations financières (ex. réduction des erreurs de rapprochement de 95 %, économies de 120K $ annuelles via automatisation des processus, amélioration du cash-flow de 25 % grâce à une meilleure gestion des créances).",
+      "Incluez le périmètre d'audit et les résultats (ex. pilotage d'audits internes couvrant 10M $ d'actifs, identification et résolution d'écarts de 50K $, obtention d'opinions d'audit sans réserve).",
+      "Indiquez les systèmes utilisés (ERP comme SAP, Oracle, NetSuite ; logiciels comptables comme QuickBooks, Xero, Sage ; Excel avancé, Power BI/Tableau pour reporting) et l'automatisation réalisée (ex. automatisation de la clôture mensuelle réduisant le temps de 10 à 3 jours).",
+      "Soulignez la préparation et l'analyse des états financiers (ex. préparation des états mensuels/trimestriels selon PCGR/NIIF, analyse des écarts avec 98 % de précision).",
+      "Détaillez l'expertise en conformité et réglementation (ex. assurance de la conformité SOX/PCGR/NIIF, gestion des déclarations fiscales sans pénalités, reporting multi-juridictionnel).",
+      "Mettez en avant le contrôle des coûts et la budgétisation (ex. gestion de budgets >5M $, performance sous-budget de 15 %, implémentation de budgétisation zéro-base économisant 12 %).",
+      "Valorisez la gestion des comptes fournisseurs/clients et la paie (ex. traitement de 500+ factures mensuelles avec 99 % de paiements à temps, réduction du DSO de 45 à 28 jours).",
+      "Incluez les certifications et développement professionnel (ex. CPA, CMA, CPA Canada, ACCA ou équivalent ; connaissance des normes ASC 606, comptabilisation des baux).",
+      "Insistez sur le leadership et l'amélioration des processus (ex. direction d'une équipe finance de 8 personnes, migration ERP, formation du personnel réduisant les erreurs).",
+      "Montrez le partenariat business (ex. fourniture d'insights financiers aux directions menant à des décisions stratégiques, support due diligence M&A).",
+      "Mentionnez la gestion des risques et la détection de fraudes (ex. implémentation de contrôles internes réduisant les risques de fraude, revues forensiques)."
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Business Administration",
+  "verbs": {
+    "en": [
+      "managed", "coordinated", "oversaw", "implemented", "optimized", "reported", "analyzed", "budgeted", "forecasted", "negotiated",
+      "led", "developed", "strategized", "executed", "planned", "organized", "directed", "supervised", "controlled", "monitored",
+      "improved", "increased", "reduced", "streamlined", "restructured", "aligned", "facilitated", "collaborated", "partnered",
+      "evaluated", "assessed", "audited", "presented", "communicated", "resolved", "mitigated", "achieved", "drove", "spearheaded",
+      "launched", "scaled", "transformed", "documented", "complied", "ensured", "maximized", "minimized", "projected", "tracked"
+    ],
+    "fr": [
+      "géré", "coordonné", "supervisé", "implémenté", "optimisé", "rapporté", "analysé", "budgété", "prévu", "négocié",
+      "dirigé", "développé", "stratégisé", "exécuté", "planifié", "organisé", "dirigé", "supervisé", "contrôlé", "surveillé",
+      "amélioré", "augmenté", "réduit", "rationalisé", "restructuré", "aligné", "facilité", "collaboré", "partenarié",
+      "évalué", "évalué", "audité", "présenté", "communiqué", "résolu", "atténué", "atteint", "impulsé", "piloté",
+      "lancé", "scalé", "transformé", "documenté", "assuré la conformité", "garanti", "maximisé", "minimisé", "projeté", "suivi"
+    ]
+  },
+  "recommendations": {
+    "en": [
+      "Include budget amounts, cost savings and process improvements (e.g., managed $5M annual budget, achieved 18% cost reduction through vendor negotiations, streamlined operations saving 25% in processing time).",
+      "Highlight cross-functional coordination and stakeholder communication (e.g., collaborated with sales, finance, and operations teams on 10+ projects, presented quarterly reports to C-level executives).",
+      "Show KPI improvements and reporting responsibilities (e.g., improved revenue growth by 15%, increased operational efficiency by 22%, prepared dashboards using Tableau/Power BI).",
+      "Quantify strategic initiatives and business impact (e.g., led market expansion resulting in 30% revenue increase, drove digital transformation projects reducing manual work by 40%).",
+      "Mention project management and execution (e.g., managed 5+ projects simultaneously using Agile/PMBOK, delivered on time and under budget by 10-15%).",
+      "Emphasize leadership and team development (e.g., supervised teams of 10-50 people, improved employee performance through coaching and training programs).",
+      "Include financial analysis and forecasting (e.g., developed accurate financial models, forecasted sales with 95% accuracy, conducted variance analysis).",
+      "Highlight risk management and compliance (e.g., ensured regulatory compliance (SOX, GDPR), mitigated risks reducing potential losses by $200K).",
+      "Detail tools and software expertise (e.g., Excel advanced, ERP systems like SAP/Oracle, CRM like Salesforce, project tools like MS Project/Asana/Jira).",
+      "Focus on change management and organizational transformation (e.g., led restructuring affecting 200 employees, improved change adoption rates).",
+      "Showcase negotiation and contract management (e.g., negotiated contracts saving 20-30% on procurement, managed vendor relationships).",
+      "Incorporate business development and growth strategies (e.g., identified new opportunities leading to partnerships or acquisitions)."
+    ],
+    "fr": [
+      "Incluez les montants budgétaires, économies et améliorations de process (ex. gestion d'un budget annuel de 5M $, obtention de 18 % de réduction des coûts via négociations fournisseurs, rationalisation des opérations économisant 25 % du temps de traitement).",
+      "Mettez en avant la coordination transverse et la communication avec les parties prenantes (ex. collaboration avec les équipes ventes, finance et opérations sur plus de 10 projets, présentation de rapports trimestriels au niveau C-level).",
+      "Indiquez l'amélioration des KPI et responsabilités de reporting (ex. amélioration de la croissance des revenus de 15 %, augmentation de l'efficacité opérationnelle de 22 %, préparation de tableaux de bord avec Tableau/Power BI).",
+      "Quantifiez les initiatives stratégiques et l'impact business (ex. pilotage d'une expansion de marché entraînant +30 % de revenus, conduite de projets de transformation digitale réduisant le travail manuel de 40 %).",
+      "Mentionnez la gestion de projets et l'exécution (ex. gestion simultanée de 5+ projets avec Agile/PMBOK, livraison dans les délais et sous budget de 10-15 %).",
+      "Soulignez le leadership et le développement des équipes (ex. supervision d'équipes de 10-50 personnes, amélioration des performances via coaching et formations).",
+      "Incluez l'analyse financière et les prévisions (ex. développement de modèles financiers précis, prévisions de ventes à 95 % de précision, analyse des écarts).",
+      "Mettez en valeur la gestion des risques et la conformité (ex. assurance de la conformité réglementaire (SOX, GDPR), atténuation des risques réduisant les pertes potentielles de 200K $).",
+      "Détaillez l'expertise en outils et logiciels (ex. Excel avancé, ERP comme SAP/Oracle, CRM comme Salesforce, outils de projet comme MS Project/Asana/Jira).",
+      "Insistez sur la gestion du changement et la transformation organisationnelle (ex. pilotage de restructurations impactant 200 employés, amélioration des taux d'adoption du changement).",
+      "Valorisez la négociation et la gestion de contrats (ex. négociations de contrats économisant 20-30 % sur les achats, gestion des relations fournisseurs).",
+      "Intégrez le développement business et les stratégies de croissance (ex. identification d'opportunités menant à des partenariats ou acquisitions)."
+    ]
+  }
+}

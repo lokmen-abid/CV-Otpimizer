@@ -1,0 +1,47 @@
+{
+  "name": "IT",
+  "verbs": {
+    "en": [
+      "developed", "implemented", "deployed", "optimized", "debugged", "integrated", "automated", "scripted", "refactored", "architected",
+      "containerized", "secured", "scaled", "configured", "maintained", "monitored", "troubleshot", "migrated", "upgraded", "administered",
+      "engineered", "designed", "built", "tested", "launched", "managed", "led", "collaborated", "resolved", "enhanced",
+      "provisioned", "orchestrated", "virtualized", "encrypted", "audited", "documented", "mentored", "streamlined", "accelerated",
+      "reduced", "increased", "eliminated", "supported", "installed", "diagnosed"
+    ],
+    "fr": [
+      "développé", "implémenté", "déployé", "optimisé", "débogué", "intégré", "automatisé", "scripté", "refactorisé", "architecturé",
+      "containerisé", "sécurisé", "scalé", "configuré", "maintenu", "surveillé", "dépanné", "migré", "mis à niveau", "administré",
+      "ingénierie", "conçu", "construit", "testé", "lancé", "géré", "dirigé", "collaboré", "résolu", "amélioré", "Travaillé",
+      "provisionné", "orchestré", "virtualisé", "chiffré", "audité", "documenté", "mentoré", "rationalisé", "accéléré", "Implémenté",
+      "réduit", "augmenté", "éliminé", "supporté", "installé", "diagnostiqué", "Réalisé" , "corrigé" ,"Utilisé" ,"Contribué "
+    ]
+  },
+  "recommendations": {
+    "en": [
+      "Mention specific technologies, frameworks, and clouds (e.g., Java, Python, React, Node.js, Docker, Kubernetes, AWS, Azure, GCP, Terraform, Jenkins, Git) and quantify impact (e.g., reduced deployment time by 70%, handled 10x traffic increase).",
+      "Show measurable improvements with metrics (e.g., decreased latency by 40%, achieved 99.99% uptime, cut costs by 30%, automated 500+ hours of manual work).",
+      "Emphasize automation, CI/CD pipelines, IaC (Infrastructure as Code), and DevOps practices to demonstrate efficiency and modern workflows.",
+      "Highlight security contributions (vulnerability scanning, compliance, encryption, zero-trust implementations) and any incident response experience.",
+      "Include cloud migrations, infrastructure scaling, or hybrid/multi-cloud setups with before/after metrics.",
+      "List relevant certifications (e.g., AWS Certified Solutions Architect, CISSP, CompTIA Security+, CCNA, Azure Administrator, Kubernetes CKA).",
+      "Describe full lifecycle management: from requirements gathering to production monitoring and post-deployment support.",
+      "Showcase leadership (e.g., led cross-functional teams, mentored juniors, managed on-call rotations) and Agile/Scrum methodologies.",
+      "Focus on business impact: revenue growth, customer satisfaction improvement, risk reduction, or operational efficiency gains.",
+      "Incorporate keywords from job descriptions naturally (e.g., microservices, API development, serverless, observability tools like Prometheus/Grafana).",
+      "Mention tools for monitoring/logging (ELK Stack, Splunk, Datadog), version control (Git), and collaboration (Jira, Confluence)."
+    ],
+    "fr": [
+      "Précisez les technologies, frameworks et clouds utilisés (ex. Java, Python, React, Node.js, Docker, Kubernetes, AWS, Azure, GCP, Terraform, Jenkins, Git) et quantifiez l'impact (ex. réduction du temps de déploiement de 70 %, gestion d'un trafic x10).",
+      "Montrez des améliorations mesurables avec métriques (ex. latence réduite de 40 %, disponibilité de 99,99 %, coûts diminués de 30 %, automatisation de 500+ heures de travail manuel).",
+      "Mettez en avant l'automatisation, les pipelines CI/CD, l'IaC (Infrastructure as Code) et les pratiques DevOps pour démontrer l'efficacité et les workflows modernes.",
+      "Soulignez les contributions en sécurité (scan de vulnérabilités, conformité, chiffrement, implémentations zero-trust) et toute expérience en réponse aux incidents.",
+      "Incluez les migrations cloud, le scaling d'infrastructure ou les setups hybrides/multi-cloud avec métriques avant/après.",
+      "Listez les certifications pertinentes (ex. AWS Certified Solutions Architect, CISSP, CompTIA Security+, CCNA, Azure Administrator, CKA Kubernetes).",
+      "Décrivez la gestion du cycle complet : de la collecte des besoins à la surveillance en production et au support post-déploiement.",
+      "Valorisez le leadership (ex. direction d'équipes pluridisciplinaires, mentorat de juniors, gestion des rotations d'astreinte) et les méthodologies Agile/Scrum.",
+      "Insistez sur l'impact business : croissance de revenus, amélioration de la satisfaction client, réduction des risques ou gains d'efficacité opérationnelle.",
+      "Intégrez naturellement les mots-clés des offres d'emploi (ex. microservices, développement API, serverless, outils d'observabilité comme Prometheus/Grafana).",
+      "Mentionnez les outils de monitoring/logging (ELK Stack, Splunk, Datadog), de gestion de versions (Git) et de collaboration (Jira, Confluence)."
+    ]
+  }
+}

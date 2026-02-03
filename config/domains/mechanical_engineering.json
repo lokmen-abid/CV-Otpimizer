@@ -1,0 +1,45 @@
+{
+  "name": "Mechanical Engineering",
+  "verbs": {
+    "en": [
+      "designed", "developed", "modeled", "simulated", "analyzed", "tested", "validated", "optimized", "prototyped", "fabricated",
+      "manufactured", "assembled", "installed", "maintained", "repaired", "inspected", "calibrated", "engineered", "implemented",
+      "integrated", "improved", "reduced", "increased", "led", "managed", "coordinated", "collaborated", "conducted", "performed",
+      "evaluated", "built", "calculated", "constructed", "operated", "overhauled", "troubleshot"
+    ],
+    "fr": [
+      "conçu", "développé", "modélisé", "simulé", "analysé", "testé", "validé", "optimisé", "prototypé", "fabriqué",
+      "manufacturé", "assemblé", "installé", "maintenu", "réparé", "inspecté", "calibré", "ingénierie", "implémenté",
+      "intégré", "amélioré", "réduit", "augmenté", "dirigé", "géré", "coordonné", "collaboré", "conduit", "effectué",
+      "évalué", "construit", "calculé", "réalisé", "opéré", "révisé", "dépanné"
+    ]
+  },
+  "recommendations": {
+    "en": [
+      "Specify tools (CAD, FEA, CFD) and measurable test results (e.g., stress analysis, failure rates).",
+      "Include prototypes and validation metrics (e.g., tolerances, performance benchmarks).",
+      "Highlight multidisciplinary collaboration and production scaling (from prototype to mass production).",
+      "Quantify achievements with specific metrics (e.g., reduced material costs by 25%, improved efficiency by 18%).",
+      "Mention key software and tools (SolidWorks, AutoCAD, ANSYS, CATIA, MATLAB, COMSOL).",
+      "Describe full project lifecycle from concept design to manufacturing and field deployment.",
+      "Emphasize problem-solving, innovation, and cost-saving or efficiency initiatives.",
+      "Include relevant certifications (e.g., PE license, Six Sigma, Lean Manufacturing).",
+      "Showcase leadership in cross-functional teams or project management.",
+      "Highlight patents, publications, or contributions to standards if applicable.",
+      "Focus on sustainability, safety, and compliance (e.g., ISO, ASME standards)."
+    ],
+    "fr": [
+      "Précisez les outils (CAO, FEA, CFD) et les résultats de tests mesurables (ex. analyse de contraintes, taux de défaillance).",
+      "Incluez les prototypes et métriques de validation (ex. tolérances, benchmarks de performance).",
+      "Mettez en avant la collaboration multidisciplinaire et la montée en production (du prototype à la série).",
+      "Quantifiez les réalisations avec des métriques précises (ex. réduction des coûts matériaux de 25 %, amélioration de l'efficacité de 18 %).",
+      "Mentionnez les logiciels et outils clés (SolidWorks, AutoCAD, ANSYS, CATIA, MATLAB, COMSOL).",
+      "Décrivez le cycle complet des projets, du concept à la fabrication et au déploiement sur site.",
+      "Soulignez la résolution de problèmes, l'innovation et les initiatives d'économie ou d'efficacité.",
+      "Incluez les certifications pertinentes (ex. licence PE, Six Sigma, Lean Manufacturing).",
+      "Mettez en valeur le leadership dans des équipes pluridisciplinaires ou la gestion de projets.",
+      "Mentionnez les brevets, publications ou contributions à des normes si applicable.",
+      "Insistez sur la durabilité, la sécurité et la conformité (ex. normes ISO, ASME)."
+    ]
+  }
+}

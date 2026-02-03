@@ -1,0 +1,49 @@
+{
+  "name": "Industrial Engineering",
+  "verbs": {
+    "en": [
+      "optimized", "streamlined", "redesigned", "implemented", "improved", "reduced", "analyzed", "coordinated", "planned", "led",
+      "supervised", "designed", "developed", "evaluated", "assessed", "forecasted", "scheduled", "managed", "controlled", "monitored",
+      "integrated", "automated", "trained", "mentored", "audited", "benchmarked", "simulated", "modeled", "eliminated", "increased",
+      "minimized", "maximized", "restructured", "facilitated", "conducted", "performed", "executed", "aligned", "standardized", "documented",
+      "troubleshot", "resolved", "enhanced", "sustained", "deployed", "scaled"
+    ],
+    "fr": [
+      "optimisé", "rationalisé", "reconçu", "implémenté", "amélioré", "réduit", "analysé", "coordonné", "planifié", "dirigé",
+      "supervisé", "conçu", "développé", "évalué", "évalué", "prévisionné", "planifié", "géré", "contrôlé", "surveillé",
+      "intégré", "automatisé", "formé", "mentoré", "audité", "benchmarké", "simulé", "modélisé", "éliminé", "augmenté",
+      "minimisé", "maximisé", "restructuré", "facilité", "conduit", "effectué", "exécuté", "aligné", "standardisé", "documenté",
+      "dépanné", "résolu", "amélioré", "maintenu", "déployé", "scalé"
+    ]
+  },
+  "recommendations": {
+    "en": [
+      "Include process improvements with quantified savings (e.g., reduced cycle time by 35%, cut costs by $150K annually, improved throughput by 22%).",
+      "Highlight Lean/Six Sigma projects, tools, and certifications (e.g., DMAIC, Kaizen events, Value Stream Mapping, Yellow/Green/Black Belt).",
+      "Mention equipment/process redesign and KPIs impacted (e.g., OEE increase from 65% to 88%, reduced downtime by 40%).",
+      "Quantify waste elimination, inventory reduction, and efficiency gains (e.g., reduced WIP by 50%, minimized defects to <1%).",
+      "Specify simulation and modeling tools (e.g., Arena, Simio, FlexSim, AnyLogic, ProModel) and results from what-if scenarios.",
+      "Describe supply chain/logistics optimizations (e.g., inventory management, MRP/ERP implementations like SAP, Oracle, demand forecasting).",
+      "Emphasize ergonomics, safety, and workplace layout improvements (e.g., reduced injury rates, 5S/6S implementations).",
+      "Show leadership in cross-functional teams, change management, and continuous improvement initiatives.",
+      "Include relevant software and tools (e.g., Minitab, Excel advanced analytics, AutoCAD for facility layouts, MS Project, Primavera).",
+      "Highlight project management (e.g., PMP certification, Agile/Scrum in industrial contexts, ROI calculations).",
+      "Focus on sustainability and green initiatives (e.g., energy consumption reduction, waste recycling programs).",
+      "Mention quality control and standards compliance (e.g., ISO 9001, IATF 16949, statistical process control)."
+    ],
+    "fr": [
+      "Incluez les améliorations de processus avec économies chiffrées (ex. réduction du temps de cycle de 35 %, économies de 150K $ annuelles, augmentation du débit de 22 %).",
+      "Mettez en valeur les projets Lean/Six Sigma, outils et certifications (ex. DMAIC, événements Kaizen, Value Stream Mapping, ceinture Jaune/Verte/Noire).",
+      "Précisez les redesigns d'équipements/processus et les KPI impactés (ex. augmentation de l'OEE de 65 % à 88 %, réduction des temps d'arrêt de 40 %).",
+      "Quantifiez l'élimination des gaspillages, réduction des stocks et gains d'efficacité (ex. WIP réduit de 50 %, défauts minimisés à <1 %).",
+      "Mentionnez les outils de simulation et modélisation (ex. Arena, Simio, FlexSim, AnyLogic, ProModel) et résultats des scénarios what-if.",
+      "Décrivez les optimisations de la chaîne d'approvisionnement/logistique (ex. gestion des stocks, implémentations MRP/ERP comme SAP, Oracle, prévisions de demande).",
+      "Soulignez les améliorations ergonomiques, de sécurité et d'aménagement des postes de travail (ex. réduction des taux d'accidents, implémentations 5S/6S).",
+      "Valorisez le leadership dans des équipes pluridisciplinaires, la gestion du changement et les initiatives d'amélioration continue.",
+      "Incluez les logiciels et outils pertinents (ex. Minitab, Excel avancé, AutoCAD pour plans d'usine, MS Project, Primavera).",
+      "Mettez en avant la gestion de projets (ex. certification PMP, Agile/Scrum en contexte industriel, calculs de ROI).",
+      "Insistez sur la durabilité et les initiatives vertes (ex. réduction de la consommation énergétique, programmes de recyclage des déchets).",
+      "Mentionnez le contrôle qualité et la conformité aux normes (ex. ISO 9001, IATF 16949, contrôle statistique des processus)."
+    ]
+  }
+}
