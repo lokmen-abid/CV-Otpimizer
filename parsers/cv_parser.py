@@ -175,13 +175,49 @@ _SECTION_HEADERS: dict[str, List[str]] = {
     "profile": ["profile", "profile summary", "summary", "profil", "résumé", "resume", "objective"],
     "experience": ["experience", "work experience", "expérience", "expériences", "professional experience", "employment history"],
     "education": ["education", "formation", "education & certifications", "academic qualifications", "studies", "éducation", "degrees"],
-    "skills": ["skills", "compétences", "technical skills", "skills & tools", "compétence", "abilities"],
+    "skills": ["skills", "compétences", "technical skills", "skills & tools", "compétence", "abilities", "technical expertise"],
     "languages": ["languages", "langues", "language skills"],
     "certifications": ["certifications", "certificat", "certificates", "certifications & trainings"],
     "projects": ["projects", "academic projects", "projets", "personal projects", "portfolio"],
     "contact": ["contact", "contactez", "informations personnelles", "personal info", "contact information"],
-    "strengths": ["strengths & qualities", "strengths", "qualities", "personal qualities", "atouts"],
+    "strengths": ["strengths & qualities", "strengths", "qualities", "personal qualities", "atouts", "leadership & community", "leadership and community"],
 }
+
+_NORM_HEADER_TO_SECTION: dict[str, str] = {}
+for _key, _variants in _SECTION_HEADERS.items():
+    for _v in _variants:
+        _norm = normalize_header(_v)
+        _NORM_HEADER_TO_SECTION.setdefault(_norm, _key)
+
+def _looks_like_contact_line(line: str) -> bool:
+    s = line.strip()
+    if not s:
+        return False
+    sl = s.lower()
+    if "@" in s and re.search(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", s, flags=re.IGNORECASE):
+        return True
+    if any(k in sl for k in ["linkedin", "github", "portfolio", "website", "www.", "http://", "https://"]):
+        return True
+    # Téléphone (heuristique simple): au moins 8 chiffres au total
+    digits = re.sub(r"\D", "", s)
+    if len(digits) >= 8:
+        return True
+    return False
+
+def _looks_like_name_line(line: str) -> bool:
+    s = line.strip()
+    if not s or any(ch.isdigit() for ch in s):
+        return False
+    if "@" in s or "http" in s.lower():
+        return False
+    words = s.split()
+    if not (1 <= len(words) <= 4):
+        return False
+    letters = re.sub(r"[^A-Za-zÀ-ÖØ-öø-ÿ]", "", s)
+    if len(letters) < 3:
+        return False
+    upper_ratio = sum(1 for c in letters if c.isupper()) / max(1, len(letters))
+    return upper_ratio >= 0.8
 
 def is_potential_header(line: str) -> bool:
     """Vérifie si une ligne est un potentiel header: court, majuscules, ou finit par : ."""
@@ -191,6 +227,9 @@ def is_potential_header(line: str) -> bool:
     words = stripped.split()
     if len(words) > 6 or len(words) < 1:
         return False
+    # Si c'est un header connu (même en Title Case), accepter
+    if normalize_header(stripped) in _NORM_HEADER_TO_SECTION:
+        return True
     # Ignorer si ressemble à un sous-titre (ex. "Data Analysis & Business Intelligence")
     if len(words) > 3 and not stripped.upper() == stripped:
         return False
@@ -202,6 +241,7 @@ def split_sections_by_headers(text: str) -> Dict[str, str]:
     """Split ligne par ligne pour détecter headers et collecter contenu."""
     sections: Dict[str, List[str]] = {}
     current_section: Optional[str] = None
+    seen_any_header = False
     lines = text.splitlines()
 
     for line in lines:
@@ -212,22 +252,37 @@ def split_sections_by_headers(text: str) -> Dict[str, str]:
         norm = normalize_header(stripped)
         matched_section = None
 
-        if is_potential_header(line):
+        # Match exact sur les headers connus (même sans ':' / majuscules)
+        if norm in _NORM_HEADER_TO_SECTION:
+            matched_section = _NORM_HEADER_TO_SECTION[norm]
+        elif is_potential_header(line):
+            # Match plus flexible si la ligne ressemble à un header
             for key, variants in _SECTION_HEADERS.items():
                 for v in variants:
                     v_norm = normalize_header(v)
-                    if norm == v_norm or norm.startswith(v_norm):  # Plus flexible
+                    if norm == v_norm:
                         matched_section = key
                         break
+                    if norm.startswith(v_norm + " "):
+                        extra_words = norm[len(v_norm):].strip().split()
+                        if 1 <= len(extra_words) <= 2:
+                            matched_section = key
+                            break
                 if matched_section:
                     break
 
         if matched_section:
             current_section = matched_section
+            seen_any_header = True
             continue  # Ne pas ajouter la ligne header au contenu
 
         if current_section is None:
-            current_section = "contact" if re.match(r"^[A-Z\s]+$", stripped) else "profile"  # Fallback pour nom/contact en haut
+            current_section = "contact" if (_looks_like_contact_line(stripped) or _looks_like_name_line(stripped)) else "profile"
+        elif current_section == "contact" and not seen_any_header:
+            # Ne pas engloutir tout le CV dans "contact" si on dépasse le bloc d'en-tête
+            if not (_looks_like_contact_line(stripped) or _looks_like_name_line(stripped)):
+                if sections.get("contact"):
+                    current_section = "profile"
 
         sections.setdefault(current_section, [])
         sections[current_section].append(line)
