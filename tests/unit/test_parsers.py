@@ -22,6 +22,39 @@ def test_split_sections_by_headers_with_headers():
     assert "education" in sections
     assert "This is profile." in sections["profile"]
 
+def test_split_sections_title_case_headers_not_swallowed_by_contact():
+    txt = (
+        "JOHN DOE\n"
+        "john.doe@example.com | +1 (555) 123-4567 | LinkedIn: linkedin.com/in/johndoe\n"
+        "\n"
+        "Work Experience\n"
+        "Company A — Software Engineer\n"
+        "- Built things\n"
+        "\n"
+        "Education\n"
+        "University X\n"
+    )
+    sections = cv_parser.split_sections_by_headers(txt)
+    assert "contact" in sections and "john.doe@example.com" in sections["contact"]
+    assert "experience" in sections and "Company A" in sections["experience"]
+    assert "education" in sections and "University X" in sections["education"]
+
+def test_split_sections_custom_headers_leadership_and_technical_expertise():
+    txt = (
+        "Certifications\n"
+        "- AWS Certified\n"
+        "\n"
+        "Leadership & Community\n"
+        "- Mentored juniors\n"
+        "\n"
+        "Technical Expertise\n"
+        "- Python, SQL\n"
+    )
+    sections = cv_parser.split_sections_by_headers(txt)
+    assert "certifications" in sections and "AWS Certified" in sections["certifications"]
+    assert "strengths" in sections and "Mentored" in sections["strengths"]
+    assert "skills" in sections and "Python" in sections["skills"]
+
 
 def test_extract_text_docx_file(sample_docx_path):
     text = cv_parser.extract_text(sample_docx_path)
